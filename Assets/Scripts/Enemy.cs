@@ -127,7 +127,7 @@ public class Enemy : MonoBehaviour
             return null;
         }
 
-        // LINQ 메소드를 이용해 가장 가까운 적을 찾습니다.
+        // LINQ メソッドで近いオブジェクトを追尾
         var neareastObject = objects
             .OrderBy(obj =>
         {

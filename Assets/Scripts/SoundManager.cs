@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -51,11 +51,11 @@ public class SoundManager : MonoBehaviour
                         return;
                     }
                 }
-                Debug.Log("¸ğµç AudioSource »ç¿ë Áß.");
+                Debug.Log("å…¨ã¦ã® AudioSourceãŒä½¿ç”¨ä¸­ã§ã™ã€‚");
                 return;
             }
         }
-        Debug.Log(_name + "»ç¿îµå°¡ SoundManager¿¡ µî·ÏµÇÁö ¾Ê¾Ò½À´Ï´Ù.");
+        Debug.Log(_name + "ã‚µã‚¦ãƒ³ãƒ‰ãŒ SoundManagerã«ç™»éŒ²ã•ã‚Œã¦ã„ã¾ã›ã‚“ã€‚");
     }
     public void StopAllSE()
     {
@@ -75,6 +75,6 @@ public class SoundManager : MonoBehaviour
                 break;
             }
         }
-        Debug.Log("Àç»ı ÁßÀÎ" + _name + "»ç¿îµå°¡ ¾ø½À´Ï´Ù");
+        Debug.Log("å†ç”Ÿä¸­ã®" + _name + "ã‚µã‚¦ãƒ³ãƒ‰ãŒã‚ã‚Šã¾ã›ã‚“ã€‚");
     }
 }

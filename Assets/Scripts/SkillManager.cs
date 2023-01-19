@@ -1,3 +1,4 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -8,7 +9,7 @@ using UnityEngine.UI;
 public class SkillManager : MonoBehaviour
 {
     [SerializeField]
-    private string NormalShot_Sound;
+    private string NS_Sound;
 
 
     private static SkillManager instance;
@@ -20,8 +21,7 @@ public class SkillManager : MonoBehaviour
         {
             if (instance == null)
             {
-                // monobehaviour를 안 쓴다면 
-                // instance = new GameManager();
+               
 
                 GameObject go = new GameObject();
                 go.name = "SkillManager";
@@ -131,8 +131,24 @@ public class SkillManager : MonoBehaviour
     {       
         if (curAtkCool != 0)
             return;
-       
+
+
+
+        if (attackType == AttackType.normalShot) 
+        {
+            SoundManager.instance.PlaySE("SE_NormalShot");
+        }
+        if (attackType == AttackType.lazer)
+        {
+            SoundManager.instance.PlaySE("SE_Lazer");
+        }
+        if (attackType ==  AttackType.sword)
+        {
+            SoundManager.instance.PlaySE("SE_Sword");
+        }
         
+
+
         Skill atk = Instantiate(attackPrefabs[(int)attackType]).GetComponent<Skill>();
         atk.transform.position = GameManager.Instance.CharacterM.transform.position;
 
@@ -155,7 +171,7 @@ public class SkillManager : MonoBehaviour
         // Vector2 dir = (mousePos - target).normalized;
         // atk.SetDir(dir);
         // curAtkCool = atkCool;
-        SoundManager.instance.PlaySE(NormalShot_Sound);
+   
     }
 
     public void ShotSkill()
@@ -166,6 +182,8 @@ public class SkillManager : MonoBehaviour
         if (skillType == SkillType.guidedMissile)
         {
             StartCoroutine(ShootGuided());
+
+
         }
         else
             CreateSkillBullet();

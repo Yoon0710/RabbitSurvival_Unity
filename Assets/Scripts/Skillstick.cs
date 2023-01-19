@@ -29,7 +29,7 @@ public class Skillstick : MonoBehaviour, IPointerDownHandler, IPointerUpHandler 
         if (objects.Count == 0 || objects == null)
             return Vector2.zero;
 
-        // LINQ 메소드를 이용해 가장 가까운 적을 찾습니다.
+        // LINQ メソッドで近い敵を追尾。
         var neareastObject = objects
             .OrderBy(obj =>
         {

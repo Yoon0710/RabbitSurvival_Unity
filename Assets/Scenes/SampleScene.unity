@@ -392,10 +392,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC774\uB3D9 \uC18D\uB3C4 : 01"
+  m_text: "\u79FB\u52D5\u901F\u5EA6 : 01"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
-  m_sharedMaterial: {fileID: 7874341306907325865, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
+  m_sharedMaterial: {fileID: 4796340384412844593, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -527,15 +527,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "[ \uC2A4\uD0AC ]\n<size=5> </size>\n\uAC70\uB300\uD55C \uD0C4\uD658\uC744
-    \uBC1C\uC0AC\uD569\uB2C8\uB2E4.\n\uC774 \uD0C4\uD658\uC740 \uC801\uC744 \uD22C\uACFC\uD574\uC11C
-    \uB0A0\uB77C\uAC11\uB2C8\uB2E4.\n<size=5> </size>\n<color=\"red\">\uB370\uBBF8\uC9C0
-    : 5</color> <color=\"yellow\">\uC18D\uB3C4 : 3</color> <color=\"blue\">\uC0AC\uAC70\uB9AC
-    : 5</color> <color=\"green\">\uD06C\uAE30 : 5</color>\n<color=\"white\">\uC801\uC744
-    \uD22C\uACFC, \uB2E4\uC911 \uD0C0\uACA9, \uD070 \uB109\uBC31, \uC9C1\uC120 \uACF5\uACA9</color>"
+  m_text: "[ \u30B9\u30AD\u30EB ]\n<size=5> </size>\n\u5927\u304D\u306A\u5F3E\u4E38\u3092\u767A\u5C04\u3059\u308B\u3002\n\u305D\u306E\u5F3E\u4E38\u306F\u6575\u3092\u901A\u904E\u3059\u308B\u3002\n<size=5>
+    </size>\n<color=\"red\">\uB370\uBBF8\uC9C0 : 5</color> <color=\"yellow\">\uC18D\uB3C4
+    : 3</color> <color=\"blue\">\uC0AC\uAC70\uB9AC : 5</color> <color=\"green\">\uD06C\uAE30
+    : 5</color>\n<color=\"white\">\u6575\u3092\u901A\u904E\u3001 AOE\u3001\u30CE\u30C3\u30AF\u30D0\u30C3\u30AF\u3001\u76F4\u7DDA\u653B\u6483</color>"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
-  m_sharedMaterial: {fileID: 7874341306907325865, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
+  m_sharedMaterial: {fileID: 4796340384412844593, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -787,10 +785,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "[\uC2A4\uD0EF]\n<size=5> </size>\n\uD604\uC7AC HP\uB97C 1 \uD68C\uBCF5\uD569\uB2C8\uB2E4.\n"
+  m_text: "[\u3000\u30B9\u30C6\u30A4\u30BF\u30B9\u3000]\n<size=5> </size>\n\u73FE\u5728\u306E
+    HP\u3092\u30001 \u56DE\u5FA9\u3059\u308B\u3002\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
-  m_sharedMaterial: {fileID: 7874341306907325865, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
+  m_sharedMaterial: {fileID: 4796340384412844593, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1348,6 +1347,134 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isClicked: 0
+--- !u!1 &373538763
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 373538764}
+  - component: {fileID: 373538765}
+  m_Layer: 0
+  m_Name: MainBGM
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &373538764
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373538763}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 883432265}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &373538765
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 373538763}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 11f57d5b34f36224e8a17fb85898c6b8, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &469570291
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,163 +2006,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 565325171}
   m_CullTransparentMesh: 1
---- !u!1 &589619234
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 589619237}
-  - component: {fileID: 589619236}
-  - component: {fileID: 589619235}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!82 &589619235
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589619234}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &589619236
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589619234}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16b5779c0449244bdb81e0091db9bae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NormalShot_Sound: 
-  LazerShot_Sound: 
-  Sword_Sound: 
-  shotType: 0
-  damage: 1
-  damageStep: 0.3
-  range: 5
-  coolTime: 3
-  coolTimeStep: 0.3
-  speed: 5
-  speedStep: 0.3
-  razerRange: 3
-  rangeStep: 0.3
-  push: 1
-  pushStep: 0.2
-  skillLevel: 1
---- !u!4 &589619237
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589619234}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &602373068
 GameObject:
   m_ObjectHideFlags: 0
@@ -2305,10 +2275,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uAE30\uBCF8 \uC0AC\uAC70\uB9AC : 01"
+  m_text: "\u5C04\u7A0B\u8DDD\u96E2 : 01"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
-  m_sharedMaterial: {fileID: 7874341306907325865, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
+  m_sharedMaterial: {fileID: 4796340384412844593, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2786,60 +2756,57 @@ MonoBehaviour:
     name: Damage + 1
     upgradeStates: 0
     value: 1
-    text: "\uB370\uBBF8\uC9C0\uAC00 1 \uC99D\uAC00\uD569\uB2C8\uB2E4."
-    tags: []
-  - upgradeType: 0
-    name: Speed + 1
-    upgradeStates: 1
-    value: 1
-    text: "\uCE90\uB9AD\uD130 \uC774\uB3D9 \uC18D\uB3C4\uAC00 1 \uC99D\uAC00\uD569\uB2C8\uB2E4."
+    text: "\u30C0\u30E1\u30FC\u30B8\u304C\uFF11\u5897\u52A0\u3059\u308B\u3002"
     tags: []
   - upgradeType: 0
     name: Bullet Speed + 1
     upgradeStates: 2
     value: 1
-    text: "\uD0C4\uD658\uC758 \uC18D\uB3C4\uAC00 1 \uC99D\uAC00\uD569\uB2C8\uB2E4."
+    text: "\u5F3E\u901F\u304C\uFF11\u5897\u52A0\u3059\u308B\u3002"
     tags: []
   - upgradeType: 0
     name: BulletScale + 1
     upgradeStates: 3
     value: 0.5
-    text: "\uD0C4\uD658\uC758 \uD06C\uAE30\uAC00 1 \uC99D\uAC00\uD569\uB2C8\uB2E4."
+    text: "\u5F3E\u306E\u5927\u304D\u3055\u304C\uFF11\u5897\u52A0\u3059\u308B\u3002"
     tags: []
   - upgradeType: 1
     name: lazer
     upgradeStates: 4
     value: 0
-    text: "\uADFC\uCC98\uC758 \uC801\uC744 \uC790\uB3D9\uC870\uC900 \uD558\uC5EC
-      \uB808\uC774\uC800 \uACF5\uACA9\uC744 \uAC00\uD569\uB2C8\uB2E4."
+    text: "\u8FD1\u304F\u306E\u6575\u3092\u8FFD\u5C3E\u3059\u308B\u30EC\u30FC\u30B6\u30FC\u306E\u653B\u6483\u3092\u3059\u308B\u3002"
     tags:
-    - "\uC790\uB3D9 \uC870\uC900"
-    - "\uC57D\uD55C \uB370\uBBF8\uC9C0"
-    - "\uC9C0\uC18D \uACF5\uACA9"
-    - "\uB109\uBC31 \uC5C6\uC74C"
+    - "\u81EA\u52D5\u8FFD\u5C3E"
+    - "\u5F31\u3044\u30C0\u30E1\u30FC\u30B8"
+    - "\u6301\u7D9A\u653B\u6483"
+    - "\u30CE\u30C3\u30AF\u30D0\u30C3\u30AF\u306A\u3057"
+  - upgradeType: 0
+    name: Speed + 1
+    upgradeStates: 1
+    value: 1
+    text: "\u79FB\u52D5\u901F\u5EA6\u304C\uFF11\u5897\u52A0\u3059\u308B\u3002"
+    tags: []
   - upgradeType: 2
     name: chargedShot
     upgradeStates: 4
     value: 0
-    text: "\uCEE4\uB2E4\uB780 \uC5D0\uB108\uC9C0\uD30C\uB97C \uBC1C\uC0AC\uD569\uB2C8\uB2E4.\n\uD574\uB2F9
-      \uD0C4\uD658\uC740 \uC801\uC744 \uD22C\uACFC\uD569\uB2C8\uB2E4."
+    text: "\u5927\u304D\u3044\u30A8\u30CA\u30B8\u30FC\u306E\u6CE2\u52D5\u3092\u767A\u5C04\u3059\u308B\u3002\n\u5F3E\u4E38\u306F\u6575\u3092\u901A\u904E\u3059\u308B\u3002"
     tags:
-    - "\uB2E4\uC911 \uD0C0\uACA9"
-    - "\uC801 \uD22C\uACFC"
-    - "\uC9C1\uC120\uD615 \uACF5\uACA9"
-    - "\uAC15\uD55C \uB109\uBC31"
+    - "\u591A\u91CD\u30BF\u30FC\u30B2\u30C3\u30C8"
+    - "\u6575\u3092\u901A\u904E"
+    - "\u76F4\u7DDA\u653B\u6483"
+    - "\u5F37\u30CE\u30C3\u30AF\u30D0\u30C3\u30AF"
   - upgradeType: 0
     name: Range + 1
     upgradeStates: 4
     value: 1
-    text: "\uC0AC\uAC70\uB9AC\uAC00 1 \uC99D\uAC00\uD569\uB2C8\uB2E4."
+    text: "\u5C04\u7A0B\u8DDD\u96E2\u304C\uFF11\u5897\u52A0\u3059\u308B\u3002"
     tags: []
   - upgradeType: 2
     name: guidedMissile
     upgradeStates: 4
     value: 0
-    text: "\uADFC\uCC98\uC758 \uC801\uC744 \uD5A5\uD574 \uC720\uB3C4 \uBBF8\uC0AC\uC77C\uC744
-      5\uAC1C \uBC1C\uC0AC\uD569\uB2C8\uB2E4."
+    text: "\u8FD1\u304F\u306E\u6575\u306B\u8A98\u5C0E\u30DF\u30B5\u30A4\u30EB\u3092\uFF15\u4F53\u767A\u5C04\u3059\u308B\u3002"
     tags:
     - "\uC790\uB3D9 \uC870\uC900"
     - "\uB2E4\uC911 \uBC1C\uC0AC"
@@ -2847,58 +2814,54 @@ MonoBehaviour:
     name: normalShot
     upgradeStates: 4
     value: 0
-    text: "\uAE30\uBCF8\uC801\uC778 \uD0C4\uD658 \uACF5\uACA9\uC744 \uD569\uB2C8\uB2E4."
+    text: "\u57FA\u672C\u7684\u306A\u653B\u6483\u3092\u4E0E\u3048\u308B\u3002"
     tags:
-    - "\uC57D\uD55C \uB109\uBC31"
-    - "\uC9C1\uC120\uD615 \uACF5\uACA9"
+    - "\u5F31\u30CE\u30C3\u30AF\u30D0\u30C3\u30AF"
+    - "\u76F4\u7DDA\u653B\u6483"
   - upgradeType: 1
     name: sword
     upgradeStates: 4
     value: 0
-    text: "\uBC14\uB77C\uBCF4\uB294 \uBC29\uD5A5\uC73C\uB85C \uAC80\uC744 \uD718\uB450\uB985\uB2C8\uB2E4."
+    text: "\u898B\u3066\u3044\u308B\u65B9\u5411\u306B\u5411\u304B\u3044\u5263\u3092\u632F\u308B\u3002"
     tags:
-    - "\uADFC\uC811 \uACF5\uACA9"
-    - "\uB2E4\uC911 \uD0C0\uACA9"
-    - "\uBCF4\uD1B5 \uB109\uBC31"
+    - "\u8FD1\u63A5"
+    - "\u591A\u91CD\u30BF\u30FC\u30B2\u30C3\u30C8"
+    - "\u30CE\u30C3\u30AF\u30D0\u30C3\u30AF"
   - upgradeType: 0
     name: Max HP + 1
     upgradeStates: 6
     value: 1
-    text: "\uC804\uCCB4 \uCCB4\uB825\uC774 1 \uC0C1\uC2B9\uD569\uB2C8\uB2E4."
+    text: "\u4F53\u529B\u304C\uFF11\u5897\u52A0\u3059\u308B\u3002"
     tags: []
   - upgradeType: 0
     name: CoolTime LV + 1
     upgradeStates: 5
     value: 1
-    text: "\uCFE8\uD0C0\uC784\uC774 \uAC10\uC18C\uD569\uB2C8\uB2E4."
+    text: "\u30AF\u30FC\u30EB\u30C0\u30A6\u30F3\u304C\u6E1B\u5C11\u3059\u308B\u3002"
     tags: []
   - upgradeType: 0
     name: Cold Shot
     upgradeStates: 7
     value: 1
-    text: "\uD0C4\uD658\uC5D0 \uB0C9\uAE30\uB97C \uBD88\uC5B4\uB123\uC5B4 \uC801\uC744
-      \uB290\uB9AC\uAC8C \uD569\uB2C8\uB2E4."
+    text: "\u5F3E\u4E38\u306B\u51B7\u6C17\u3092\u6CE8\u5165\u3057\u3001\u6575\u306E\u79FB\u52D5\u901F\u5EA6\u3092\u4F4E\u4E0B\u3055\u305B\u308B\u3002"
     tags: []
   - upgradeType: 0
     name: Fire Shot
     upgradeStates: 8
     value: 1
-    text: "\uD0C4\uD658\uC5D0 \uBD88\uAF43\uC744 \uBD88\uC5B4\uB123\uC5B4 \uC801\uC5D0\uAC8C
-      \uC9C0\uC18D \uB370\uBBF8\uC9C0\uB97C \uAC00\uD569\uB2C8\uB2E4."
+    text: "\u5F3E\u4E38\u306B\u708E\u3092\u6CE8\u5165\u3057\u3001\u6575\u306B\u30C9\u30C3\u30C8\u30C0\u30E1\u30FC\u30B8\u3092\u4E0E\u3048\u308B\u3002"
     tags: []
   - upgradeType: 0
     name: Spark Shot
     upgradeStates: 9
     value: 1
-    text: "\uD0C4\uD658\uC5D0 \uC804\uB958\uB97C \uBD88\uC5B4\uB123\uC5B4 \uC5F0\uC1C4\uC801\uC73C\uB85C
-      3\uB9C8\uB9AC\uC758 \uC801\uC5D0\uAC8C \uCD94\uAC00 \uB370\uBBF8\uC9C0\uB97C
-      \uAC00\uD569\uB2C8\uB2E4."
+    text: "\u5F3E\u4E38\u306B\u96FB\u529B\u3092\u6CE8\u5165\u3057\u3001\u8FD1\u304F\u306E\u6575\uFF13\u4F53\u306B\u30B9\u30D7\u30E9\u30C3\u30B7\u30E5\u30C0\u30E1\u30FC\u30B8\u3092\u4E0E\u3048\u308B\u3002"
     tags: []
   - upgradeType: 0
     name: Max HP + 1
     upgradeStates: 6
     value: 1
-    text: "\uC804\uCCB4 \uCCB4\uB825\uC774 1 \uC0C1\uC2B9\uD569\uB2C8\uB2E4."
+    text: "\u4F53\u529B\u304C\uFF11\u5897\u52A0\u3059\u308B\u3002"
     tags: []
 --- !u!1 &850606598
 GameObject:
@@ -3164,7 +3127,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 961123458}
+  - {fileID: 373538764}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3958,194 +3921,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935799512}
   m_CullTransparentMesh: 1
---- !u!1 &950080404
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 950080406}
-  - component: {fileID: 950080405}
-  m_Layer: 0
-  m_Name: GameObject_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &950080405
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950080404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16b5779c0449244bdb81e0091db9bae4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NormalShot_Sound: SE_NormalShot
-  LazerShot_Sound: 
-  Sword_Sound: 
-  shotType: 0
-  damage: 1
-  damageStep: 0.3
-  range: 5
-  coolTime: 3
-  coolTimeStep: 0.3
-  speed: 5
-  speedStep: 0.3
-  razerRange: 3
-  rangeStep: 0.3
-  push: 1
-  pushStep: 0.2
-  skillLevel: 1
---- !u!4 &950080406
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 950080404}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &961123457
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 961123458}
-  - component: {fileID: 961123459}
-  m_Layer: 0
-  m_Name: Audio Source
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &961123458
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961123457}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 883432265}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &961123459
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 961123457}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 11f57d5b34f36224e8a17fb85898c6b8, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &997876817
 GameObject:
   m_ObjectHideFlags: 0
@@ -4730,10 +4505,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uAE30\uBCF8 \uBC1C\uC0AC \uC18D\uB3C4 : 01"
+  m_text: "\u5F3E\u901F : 01"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
-  m_sharedMaterial: {fileID: 7874341306907325865, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
+  m_sharedMaterial: {fileID: 4796340384412844593, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5706,10 +5481,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uD0C4\uD658 \uD06C\uAE30 : 01"
+  m_text: "\u5F3E\u306E\u5927\u304D\u3055 : 01"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
-  m_sharedMaterial: {fileID: 7874341306907325865, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
+  m_sharedMaterial: {fileID: 4796340384412844593, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5976,14 +5751,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "[ \uAE30\uBCF8 \uACF5\uACA9 ]\n<size=5> </size>\n\uADFC\uCC98\uC758 \uC801\uC744
-    \uC790\uB3D9 \uC870\uC900\uD558\uC5EC \uB808\uC774\uC800\uB97C \uBC1C\uC0AC\uD569\uB2C8\uB2E4.\n<size=5>
-    </size>\n<color=\"red\">\uB370\uBBF8\uC9C0 : 1</color> <color=\"yellow\">\uC18D\uB3C4
-    : 5</color> <color=\"blue\">\uC0AC\uAC70\uB9AC : 3</color> <color=\"green\">\uD06C\uAE30
-    : 1</color>\n<color=\"white\">\uC790\uB3D9 \uC870\uC900, \uC9C0\uC18D \uACF5\uACA9</color>\n"
+  m_text: "[ \u57FA\u672C\u653B\u6483 ]\n<size=5> </size>\n\u8FD1\u304F\u306E\u6575\u306E\u8FFD\u5C3E\u3059\u308B\u30EC\u30FC\u30B6\u30FC\u3092\u767A\u5C04\u3059\u308B\u3002\n<size=5>
+    </size>\n<color=\"red\">\u30C0\u30E1\u30FC\u30B8 : 1</color> <color=\"yellow\">\u901F\u5EA6
+    : 5</color> <color=\"blue\">\u5C04\u7A0B\u8DDD\u96E2 : 3</color> <color=\"green\">\u5F3E\u306E\u5927\u304D\u3055
+    : 1</color>\n<color=\"white\">\u81EA\u52D5\u8FFD\u5C3E\u3001\u30C9\u30C3\u30C8\u30C0\u30E1\u30FC\u30B8</color>\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
-  m_sharedMaterial: {fileID: 7874341306907325865, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
+  m_sharedMaterial: {fileID: 4796340384412844593, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7223,10 +6997,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uAE30\uBCF8 \uB370\uBBF8\uC9C0 : 9"
+  m_text: "\u57FA\u672C\u30C0\u30E1\u30FC\u30B8 : 9"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
-  m_sharedMaterial: {fileID: 7874341306907325865, guid: 6d0e1182a482848a58bbf643d3ccf422, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
+  m_sharedMaterial: {fileID: 4796340384412844593, guid: 0e3c6185bb1aeec46951529dd234af7d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

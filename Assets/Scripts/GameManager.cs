@@ -60,12 +60,12 @@ public class GameManager : MonoBehaviour
 
     public void Init()
     {
-        // 가변 해상도 방법
-        // float ratio = 1f; // 16 : 9 비율일 때에 원하는 비율로 바꾸기 위해 정한 값(강제로 1대1로 맞추는 등)
+        // 可変解像度
+        // float ratio = 1f; // 16 : 9 の時好きな比率に変えるため（強制に１：１にしたり）
         // Screen.SetResolution(Screen.width, Screen.height * ratio, true);
 
-        // 참고로 Screen.width(height)는 처음 썼을 때에는 디바이스의 해상도 기준으로 가져오지만 
-        // setResolution 이후에는 설정한 해상도의 값으로 가져옴 
+        // Screen.width(height)は最初はデバイスの解像度が基準だが
+        // setResolution が実行されてからは設定した解像度を参照する
 
         Canvas = GameObject.Find("Canvas");
         Vector2 center = Canvas.GetComponent<Canvas>().GetComponent<RectTransform>().anchoredPosition;
@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
         float maxY = center.y + (Screen.height / 2f) + 0.5f;
         // float maxY = center.y + 960;
 
-        // 1200 x 1920으로 해상도 세팅 방법1 --> 고정 해상도 
+        // 1200 x 1920に設定したい --> 固定解像度 
         Screen.SetResolution(1920, 1200, true);
 
         Guide.Add(new Vector2(minX, minY));

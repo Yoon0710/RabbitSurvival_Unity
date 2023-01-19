@@ -13,8 +13,6 @@ public class UIManager : MonoBehaviour
         {
             if (instance == null)
             {
-                // monobehaviour를 안 쓴다면 
-                // instance = new GameManager();
                 GameObject go = GameObject.Find("Canvas");
 
                 if (go == null)
@@ -189,25 +187,25 @@ public class UIManager : MonoBehaviour
         if (upgrade.upgradeType == UpgradeType.upgrade)
         {
             btn.transform.Find("Text").GetComponent<TextMeshProUGUI>().text =
-                $"[ 스탯 ]\n<size=5> </size>\n{upgrade.text}\n";
+                $"[ ステイタス ]\n<size=5> </size>\n{upgrade.text}\n";
         }
         else
         {
             Skill obj = null;
-            string typeS = "스킬";
+            string typeS = "スキル";
             if (upgrade.upgradeType == UpgradeType.attack)
             {
                 obj = SkillManager.Instance.attackPrefabs[(int)System.Enum.Parse(typeof(SkillManager.AttackType), upgrade.name)].GetComponent<Skill>();
-                typeS = "기본 공격";
+                typeS = "基本攻撃";
             }
             else
             {
                 obj = SkillManager.Instance.skillPrefabs[(int)System.Enum.Parse(typeof(SkillManager.SkillType), upgrade.name)].GetComponent<Skill>();
-                typeS = "스킬";
+                typeS = "スキル";
             }
             string text = string.Join(", ", upgrade.tags);
             btn.transform.Find("Text").GetComponent<TextMeshProUGUI>().text =
-                $"[ {typeS} ]\n<size=5> </size>\n{upgrade.text}\n<size=5> </size>\n<color=red> 데미지 : {obj.damage} </color> <color=yellow> 속도 : {obj.speed} </color> <color=blue> 사거리 : {obj.range} </color> <color=green> 쿨타임 : {obj.coolTime} </color>\n<color=white>{text}</color>";
+                $"[ {typeS} ]\n<size=5> </size>\n{upgrade.text}\n<size=5> </size>\n<color=red> ダメージ : {obj.damage} </color> <color=yellow> 速度 : {obj.speed} </color> <color=blue> 射程距離 : {obj.range} </color> <color=green> クールダウン : {obj.coolTime} </color>\n<color=white>{text}</color>";
         }
     }
 
@@ -230,7 +228,7 @@ public class UIManager : MonoBehaviour
 
     public void UpdateStatsUI()
     {
-        string[] type = { "기본 데미지", "이동 속도", "기본 발사 속도", "탄환 크기", "기본 사거리" };
+        string[] type = { "ダメージ", "移動速度", "弾速", "弾の大きさ", "射程距離" };
         float[] statV = { GameManager.Instance.playerDmg, GameManager.Instance.playerSpeed, GameManager.Instance.playerShotSpeed + 1, GameManager.Instance.playerBulletScale + 1, GameManager.Instance.playerBulletRange + 1 };
         TextMeshProUGUI[] txt = statsUI.GetComponentsInChildren<TextMeshProUGUI>();
         for (int i = 0; i < txt.Length; i++)
