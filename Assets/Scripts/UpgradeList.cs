@@ -21,6 +21,7 @@ public enum UpgradeStates
     bulletScale,
     bulletRange,
     coolTime,
+    skilldamage,
     maxHP,
     coldShot,
     fireShot,
@@ -115,6 +116,9 @@ public struct Upgrade
                 if (GameManager.Instance.playerHP + 1 > GameManager.Instance.playerMaxHP)
                     UIManager.Instance.HPUP(GameManager.Instance.playerMaxHP - GameManager.Instance.playerHP);
                 UIManager.Instance.HPUP(1);
+                break;
+            case UpgradeStates.skilldamage:
+                GameManager.Instance.playerSkillDamageLv += value;
                 break;
             default:
                 break;

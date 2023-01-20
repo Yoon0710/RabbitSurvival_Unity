@@ -98,8 +98,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16b5779c0449244bdb81e0091db9bae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NormalShot_Sound: 
+  LazerShot_Sound: 
+  Sword_Sound: 
   shotType: 2
-  damage: 0.2
+  damage: 0.5
   damageStep: 0.1
   range: 0.2
   coolTime: 0.01

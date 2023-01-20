@@ -122,11 +122,14 @@ MonoBehaviour:
   flLvTime: 1
   maxHP: 10
   curHP: 0
-  moveSpeed: 0.8
-  shotSpeed: 0.7
+  moveSpeed: 2
+  shotSpeed: 1.5
   damage: 1
   pushed: 1
   bulletLifeTime: 3
+  level: 0
+  hudDamageText: {fileID: 4507062773840628443, guid: 02eeb3bec50ed08439956c388f90e3bf, type: 3}
+  hudPos: {fileID: 0}
   startSpawnTime: 0
   spawnPercent: 5
   isDamaged: 0

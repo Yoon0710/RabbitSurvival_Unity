@@ -4,7 +4,7 @@ using UnityEngine;
 using System.Linq;
 
 public class Enemy : MonoBehaviour
-{
+{   
     [SerializeField]
     private GameObject goBullet;
 
@@ -20,6 +20,10 @@ public class Enemy : MonoBehaviour
     public int damage = 1;
     public float pushed = 1f;
     public float bulletLifeTime = 5f;
+    public int level;
+
+    public GameObject hudDamageText;
+    public Transform hudPos;
 
     public float startSpawnTime = 0f;
     public float spawnPercent = 5;
@@ -68,6 +72,9 @@ public class Enemy : MonoBehaviour
         }
     }
 
+  
+      
+  
     public void IceDamaged()
     {
         if (isIced)
@@ -155,6 +162,10 @@ public class Enemy : MonoBehaviour
     public void StartDamaged()
     {
         isDamaged = true;
+        //GameObject hudText = Instantiate(hudDamageText); 에러발생함
+        //hudText.transform.position = hudPos.position;
+        //hudText.GetComponent<DamageText>().damage = damage;
+       // Debug.Log(damage);
         StartCoroutine(Damaged());
     }
 
@@ -179,6 +190,13 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+       // level = Mathf.FloorToInt(GameManager.Instance.gameTimer / 10f);
+
+       // if (flTimer > (level == 0 ? 0.5f : 0.2f))
+       // {
+       //     flTimer = 0;
+      //  }
+
         if (!isSpawn || (isDamaged && !isRzor))
             return;
 
@@ -258,14 +276,14 @@ public class Enemy : MonoBehaviour
             }
 
             int RndNum = Random.Range(0, bullets.Count - 1);
-            // 총알은 캔버스 아래에 없으므로 position으로 넣어야함 
+            //　弾はキャンバスにはないのでpositionを使う 
 
             GameObject go = Instantiate(bullets[RndNum].gameObject);
             go.transform.position = this.transform.position;
             // go.transform.rotation = Quaternion.identity;
             // go.transform.parent = GameObject.Find("Canvas").transform;
 
-            // 총알 색상을 enColor에서 랜덤으로 설정 
+            // 弾の色をenColorからランダムに設定 
             Bullet bullet = go.GetComponent<Bullet>();
             bullet.damage = damage;
             bullet.speed = shotSpeed;

@@ -127,6 +127,7 @@ MonoBehaviour:
   damage: 1
   pushed: 0.2
   bulletLifeTime: 8
+  level: 0
   startSpawnTime: 180
   spawnPercent: 100
   isDamaged: 0
@@ -146,6 +147,8 @@ MonoBehaviour:
   - {fileID: 2373713835279397814, guid: 72d32d28bd7de4d98bec602f1131f626, type: 3}
   - {fileID: 2373713835279397814, guid: 72d32d28bd7de4d98bec602f1131f626, type: 3}
   bulletsActive: []
+  hudDamageText: {fileID: 4507062773840628443, guid: 02eeb3bec50ed08439956c388f90e3bf, type: 3}
+  hudPos: {fileID: 0}
 --- !u!50 &-7755793211764368440
 Rigidbody2D:
   serializedVersion: 4

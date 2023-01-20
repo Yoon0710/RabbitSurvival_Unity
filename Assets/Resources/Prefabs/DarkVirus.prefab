@@ -119,16 +119,17 @@ MonoBehaviour:
   type: 0
   rank: 1
   flTimer: 0
-  flLvTime: 1.2
+  flLvTime: 1
   maxHP: 15
   curHP: 0
-  moveSpeed: 1.3
-  shotSpeed: 0.7
+  moveSpeed: 2
+  shotSpeed: 0.8
   damage: 1
   pushed: 0.8
   bulletLifeTime: 5
+  level: 0
   startSpawnTime: 10
-  spawnPercent: 2
+  spawnPercent: 5
   isDamaged: 0
   isRzor: 0
   bullets:

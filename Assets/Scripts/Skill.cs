@@ -17,13 +17,6 @@ public enum ShotType
 
 public class Skill : MonoBehaviour
 {
-    [SerializeField]
-    private string NormalShot_Sound;
-    [SerializeField]
-    private string LazerShot_Sound;
-    [SerializeField]
-    private string Sword_Sound;
-
     public ShotType shotType;
     public float damage = 1f;
     public float damageStep = 0.3f;
@@ -88,7 +81,7 @@ public class Skill : MonoBehaviour
         if (objects == null)
             return null;
 
-        // LINQ メソッドを利用し
+        // LINQ 메소드를 이용해 가장 가까운 적을 찾습니다.
         var neareastObject = objects
             .OrderBy(obj =>
         {
@@ -170,8 +163,7 @@ public class Skill : MonoBehaviour
         Vector2 joystickPos = dir;
         Vector3 newPos = new Vector3(transform.localPosition.x + joystickPos.x * speed * Time.deltaTime, transform.localPosition.y + joystickPos.y * speed * Time.deltaTime, transform.localPosition.z);
         transform.localPosition = newPos;
-       
-   }
+    }
 
     public void Sword()
     {
@@ -252,8 +244,6 @@ public class Skill : MonoBehaviour
 
         if (other.gameObject.tag == "Bullet")
         {
-            SoundManager.instance.PlaySE(NormalShot_Sound);
-        
             if (other.GetComponent<SpriteRenderer>().color != Color.green)
                 return;
 
@@ -263,10 +253,7 @@ public class Skill : MonoBehaviour
                     Destroy(other.gameObject);
                 else if (skillLevel > 1 && !other.GetComponent<Bullet>().reverse)
                     other.gameObject.GetComponent<Bullet>().ReverseDir();
-
-
             }
-
         }
     }
 
@@ -279,7 +266,6 @@ public class Skill : MonoBehaviour
             range -= Time.deltaTime;
             if (range <= 0)
                 Destroy(this.gameObject);
-           
         }
 
         if (shotType == ShotType.lazer)

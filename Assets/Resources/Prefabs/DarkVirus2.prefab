@@ -127,8 +127,9 @@ MonoBehaviour:
   damage: 1
   pushed: 0.8
   bulletLifeTime: 5
+  level: 0
   startSpawnTime: 180
-  spawnPercent: 2
+  spawnPercent: 5
   isDamaged: 0
   isRzor: 0
   bullets:

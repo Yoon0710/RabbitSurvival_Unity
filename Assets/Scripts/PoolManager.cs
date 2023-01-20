@@ -56,9 +56,10 @@ public class PoolManager : MonoBehaviour
     [SerializeField]
     private GameObject enemy;
 
+    public int level;
     private int index = 1;
     public float flTimer = 0f;
-    public float flLvTime = 3f;
+    public float flLvTime = 1f;
     public List<GameObject> spawnEnemyList = new List<GameObject>();
 
     private void Start()
@@ -181,10 +182,25 @@ public class PoolManager : MonoBehaviour
             // go.GetComponent<Bullet>().Init((GameUtil.enColor)Random.Range(0, 3));
 
             flTimer = 0f;
-            if (flLvTime >= 0)
-                flLvTime -= 0.03f;
-            else if (flLvTime <= 0)
+            // if (flLvTime >= 0)
+            //     flLvTime -= 0.03f;
+            // else if (flLvTime <= 0)
+            //     flLvTime = 3;
+
+
+
+            level = Mathf.FloorToInt(GameManager.Instance.gameTimer / 10f);
+
+            if (flTimer > (level == 0 ? 0.5f : 0.2f))
+            {
+                flTimer = 0;
+            }
+            else if (flLvTime < 0)
+            {
                 flLvTime = 3;
+            }
+            // レベルは徐々に上昇し、ーになると３に戻る
+
         }
         flTimer += Time.deltaTime;
 

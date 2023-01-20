@@ -101,7 +101,7 @@ MonoBehaviour:
   Btype: 0
   lifeTime: 7
   playerDir: {x: 0, y: 0, z: 0}
-  speed: 20
+  speed: 30
   damage: 1
   reverse: 0
   range: 5

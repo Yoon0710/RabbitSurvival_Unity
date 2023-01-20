@@ -40,6 +40,7 @@ public class GameManager : MonoBehaviour
     public float score = 0;
     public int playerDmg = 1;
     public int fullPlayerDmg = 10;
+    public int skillDmg = 1;
     public float playerSpeed = 2f;
     public float fullPlayerSpeed = 10f;
     public float playerShotSpeed = 0f;
@@ -50,6 +51,7 @@ public class GameManager : MonoBehaviour
     public float playerFireShotLv = 0f;
     public float playerSparkShotLv = 0f;
     public float playerPushPower = 1f;
+    public float playerSkillDamageLv = 1f;
 
     public float gameTimer = 0f;
 
@@ -92,6 +94,7 @@ public class GameManager : MonoBehaviour
         UIManager.Instance.InitScore();
         UIManager.Instance.InitHP();
         playerDmg = 1;
+        playerSkillDamageLv = 1;
         playerSpeed = 2;
         playerShotSpeed = 0;
         playerBulletScale = 0;
@@ -99,6 +102,8 @@ public class GameManager : MonoBehaviour
         playerColdShotLv = 0;
         playerFireShotLv = 0;
         playerSparkShotLv = 0;
+
+        // UpgradeList.cs
 
         gameTimer = 0f;
 

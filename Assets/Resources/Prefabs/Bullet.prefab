@@ -98,11 +98,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a48fb3f6b3d540c48863d35f4877321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Btype: 0
   lifeTime: 5
   playerDir: {x: 0, y: 0, z: 0}
-  speed: 15
+  speed: 30
   damage: 1
   reverse: 0
+  range: 2
 --- !u!58 &7081870517585093054
 CircleCollider2D:
   m_ObjectHideFlags: 0
