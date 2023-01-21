@@ -1,8 +1,8 @@
 # RabbitSurvival
 
-Author - Nero0710
+Author - Yoon0710
 
-This is a shotting game motivated by Vampire Surviviors.
+This is a shotting game motivated by Vampire Survivors.
 
 # Requirement
 
