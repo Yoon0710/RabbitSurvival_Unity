@@ -99,13 +99,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16b5779c0449244bdb81e0091db9bae4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NormalShot_Sound: 
-  LazerShot_Sound: 
-  Sword_Sound: 
   shotType: 6
-  damage: 5
+  damage: 4
   damageStep: 2
-  range: 2
+  range: 3
   coolTime: 1.5
   coolTimeStep: 0.3
   speed: 9
@@ -114,7 +111,9 @@ MonoBehaviour:
   rangeStep: 0.3
   push: 3.5
   pushStep: 1
-  skillLevel: 2
+  swordSkillLevel: 3
+  normalSkillLevel: 0
+  lazerSkillLevel: 0
 --- !u!70 &6306444740261359896
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

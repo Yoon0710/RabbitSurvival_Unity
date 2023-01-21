@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using Unity.VisualScripting;
 
 public enum ShotType
 {
@@ -43,7 +44,10 @@ public class Skill : MonoBehaviour
     private GameObject guidedObj;
     private float rotationZ = -45f;
     private Quaternion oriEuler;
-    public int skillLevel = 1;
+    public int swordSkillLevel = 1;
+    public int normalSkillLevel = 1;
+    public int lazerSkillLevel = 1;
+
 
     // [System.NonSerialized]
     // public float lazerDmgCool;
@@ -163,6 +167,7 @@ public class Skill : MonoBehaviour
         Vector2 joystickPos = dir;
         Vector3 newPos = new Vector3(transform.localPosition.x + joystickPos.x * speed * Time.deltaTime, transform.localPosition.y + joystickPos.y * speed * Time.deltaTime, transform.localPosition.z);
         transform.localPosition = newPos;
+
     }
 
     public void Sword()
@@ -228,6 +233,7 @@ public class Skill : MonoBehaviour
                     SkillManager.Instance.sparkCool = 2f;
                     SkillManager.Instance.sparkN = 3;
                 }
+                
                 targetE.StartDamaged();
                 if (shotType == ShotType.lazer)
                 {
@@ -239,7 +245,10 @@ public class Skill : MonoBehaviour
                 other.GetComponent<Rigidbody2D>().AddForce(shootDir * push * other.GetComponent<Enemy>().pushed, ForceMode2D.Impulse);
                 targetE.curHP -= damage;
                 targetE.StartDamaged();
+
+
             }
+
         }
 
         if (other.gameObject.tag == "Bullet")
@@ -249,10 +258,13 @@ public class Skill : MonoBehaviour
 
             if (shotType == ShotType.sword)
             {
-                if (skillLevel <= 1)
+                if (swordSkillLevel <= 1)
                     Destroy(other.gameObject);
-                else if (skillLevel > 1 && !other.GetComponent<Bullet>().reverse)
+                else if (swordSkillLevel > 1 && !other.GetComponent<Bullet>().reverse)
                     other.gameObject.GetComponent<Bullet>().ReverseDir();
+                else if (swordSkillLevel > 2)
+                    this.transform.position = new Vector3(this.transform.position.x, this.transform.position.y, 0f);
+
             }
         }
     }

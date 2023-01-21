@@ -90,14 +90,14 @@ public class SkillManager : MonoBehaviour
         for (AttackType i = (AttackType)0; i < AttackType.indexCount; i++)
         {
             GameObject go = Resources.Load($"Prefabs/{i.ToString()}") as GameObject;
-            go.GetComponent<Skill>().skillLevel = 1;
+         //   go.GetComponent<Skill>().skillLevel = 1;
             attackPrefabs.Add(go);
         }
 
         for (SkillType i = (SkillType)0; i < SkillType.indexCount; i++)
         {
             GameObject go = Resources.Load($"Prefabs/{i.ToString()}") as GameObject;
-            go.GetComponent<Skill>().skillLevel = 1;
+         //   go.GetComponent<Skill>().skillLevel = 1;
             skillPrefabs.Add(go);
         }
 
