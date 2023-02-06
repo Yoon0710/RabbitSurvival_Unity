@@ -8,6 +8,8 @@ This is a shotting game motivated by Vampire Survivors.
 
 - Unity 2021.3.5f1
 
+(if you just want to play, dont need)
+
 ## Key input
 
 | Key   | Function               |
